@@ -1,0 +1,29 @@
+
+leatherwallet=1100
+legst=18
+leathergst=(leatherwallet*legst)/100
+umbrella=900
+umgst=12
+umbrellagst=(umbrella*umgst)/100
+cigrette=200
+cigst=28
+cigrettegst=(cigrette*cigst)/100
+Honey=100
+hogst=0
+honeytot=100*4
+totalamount=leatherwallet+leathergst+umbrella+umbrellagst+cigrette+ cigrettegst+honeytot
+print(totalamount)
+gst={legst:leatherwallet,umgst:umbrella,cigst:cigrette,hogst:Honey}
+print("the max gst paid on the product is cigrette",cigst)
+list=[]
+while True:
+    product=input("enter the product you want to enter")
+    list.append(product)
+    price=input("enter the price of the product")
+    list.append(price)
+    gst=input("enter the gst rate for the product")
+    list.append(gst)
+    exit=input("enter q for exit")
+    if exit=="q":
+        break
+print(list)
